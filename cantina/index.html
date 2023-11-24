@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cantina</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Coffee Talk</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Produtos</h2>
+            <ul class="product-list">
+                <li class="product">
+                    <img src="img/cafeleite.jpg" alt="Café ao leite">
+                    <p>Café ao leite</p>
+                    <p class="price">R$ 6,00</p>
+                    <button class="add-to-cart" data-name="Café ao leite" data-price="6.00">Adicionar ao Carrinho</button>
+                </li>
+                <li class="product">
+                    <img src="img/cappuccino.jpg" alt="Cappuccino">
+                    <p>Cappuccino</p>
+                    <p class="price">R$ 10,50</p>
+                    <button class="add-to-cart" data-name="Cappuccino" data-price="10.50">Adicionar ao Carrinho</button>
+                </li>
+                <li class="product">
+                    <img src="img/Macchiato.jpg" alt="Macchiato">
+                    <p>Macchiato</p>
+                    <p class="price">R$ 8,90</p>
+                    <button class="add-to-cart" data-name="Macchiato" data-price="8.90">Adicionar ao Carrinho</button>
+                </li>
+                <li class="product">
+                    <img src="img/Mocha.jpg" alt="Mocha">
+                    <p>Mocha</p>
+                    <p class="price">R$ 9,00</p>
+                    <button class="add-to-cart" data-name="Mocha" data-price="9.00">Adicionar ao Carrinho</button>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Carrinho de Compras</h2>
+            <ul id="cart">
+                <!-- Elemento vazio para representar os produtos no carrinho -->
+            </ul>
+            <p>Total: <span id="total">R$ 0,00</span></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="carrinho.js"></script>
+</body>
+</html>
